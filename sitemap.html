@@ -1,10 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sitemap | Bakerz Bite</title>
   <meta name="description" content="Sitemap of Bakerz Bite – find every page and section of our bakery website.">
-  <title>Sitemap – Bakerz Bite</title>
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#3b123c">
+  <link rel="canonical" href="https://shumaimaptech-cell.github.io/Seo-Optimization-Website/sitemap.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Bakerz Bite">
+  <meta property="og:title" content="Sitemap | Bakerz Bite">
+  <meta property="og:description" content="Find every page and section of the Bakerz Bite bakery website.">
+  <meta property="og:image" content="https://shumaimaptech-cell.github.io/Seo-Optimization-Website/material/hero.png">
+  <meta property="og:url" content="https://shumaimaptech-cell.github.io/Seo-Optimization-Website/sitemap.html">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="material/logo with bg.png" type="image/png">
+  <link rel="apple-touch-icon" href="material/Logo.png">
+
+  <!-- Bootstrap CSS 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+    integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main stylesheet (navbar, footer and shared styles) -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Sitemap page styles -->
   <style>
     :root {
       --background-color--: #fff8ed;
@@ -18,536 +49,48 @@
       --purple: #6f3fa8;
       --text-color: #120b18;
     }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       font-family: "Segoe UI", system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
       background: var(--background-color--);
       color: var(--text-color);
       line-height: 1.6;
     }
-    a { color: inherit; text-decoration: none; }
-
-    /* header {
-      background: var(--nav-bg);
-      color: var(--white--);
-      padding: 14px 24px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-    .brand { display: flex; align-items: center; gap: 12px; font-weight: 700; font-size: 1.2rem; }
-    .brand .logo-circle {
-      position: relative;
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      overflow: hidden;
-      flex-shrink: 0;
-      background: var(--nav-bg);
-    }
-    .brand .logo-circle img {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      height: 70px;
-      width: auto;
-      max-width: none;
-      transform: translate(-50%, -50%);
-    }
-    .hero-logo {
-      display: block;
-      height: 170px;
-      width: auto;
-      margin: 0 auto 8px;
-      mix-blend-mode: multiply;
-    }
-    header nav { display: flex; gap: 20px; flex-wrap: wrap; }
-    header nav a { padding: 4px 2px; border-bottom: 2px solid transparent; transition: color .2s, border-color .2s; }
-    header nav a:hover { color: var(--gold); border-color: var(--gold); }
 
     .hero {
       text-align: center;
-      padding: 56px 24px 36px;
+      padding: 170px 24px 36px;
       background: linear-gradient(180deg, var(--cream), var(--background-color--));
     }
-    .hero h1 { font-size: clamp(2rem, 5vw, 3rem); color: var(--text-color--); }
-    .hero h1 span { color: var(--purple); }
-    .hero p { max-width: 560px; margin: 10px auto 0; opacity: .75; }
 
-    main { max-width: 1100px; margin: 0 auto; padding: 24px 20px 64px; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 22px; } */
-/* Top Announcement Bar */
-.top-bar {
-    background: var(--nav-bg);
-    color: var(--gold);
-    text-align: center;
-    font-size: 15px;
-    font-weight: 500;
-    height: 34px;
-    padding: 8px 0;
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1001;
-}
-
-.top-bar p {
-    margin: 0;
-}
-
-/* Sticky Navbar */
-.navitem {
-    background-color: var(--white--);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 3.5%;
-    gap: 10px;
-    height: 80px;
-
-    position: fixed;
-    top: 34px;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
-#home {
-      position: relative;
-      scroll-margin-top: 20px;
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      color: var(--text-color--);
     }
 
-.nav-left {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    flex: 1;
-    min-width: 0;
-}
-
-.nav-right {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    flex: 1;
-    min-width: 0;
-    justify-content: flex-end;
-}
-
-/* location */
-
-.location {
-    height: 48px;
-    background-color: var(--white--);
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    padding: 5px 12px;
-    gap: 8px;
-    cursor: pointer;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
-    transition: 0.3s;
-    box-sizing: border-box;
-}
-
-.location-icon {
-    width: 30px;
-    height: 30px;
-    min-width: 30px;
-    border-radius: 50%;
-    background-color: #f2f2f2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-color--);
-    font-size: 15px;
-}
-
-.location-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow: hidden;
-    line-height: 1.1;
-}
-
-.location-title {
-    font-size: 10px;
-    color: #777;
-    font-weight: 600;
-}
-
-/* location popup */
-.location-popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.55);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
-    padding: 15px;
-}
-
-/* show popup */
-.location-popup.show {
-    display: flex;
-}
-
-/* location modal */
-.location-modal {
-    position: relative;
-    width: 100%;
-    max-width: 520px;
-    background-color: var(--white--);
-    border-radius: 25px;
-    padding: 30px 20px 20px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    max-height: 95vh;
-    overflow-y: auto;
-}
-
-/* close button */
-.close-location {
-    position: absolute;
-    top: 12px;
-    right: 15px;
-    width: 35px;
-    height: 35px;
-    border: none;
-    background: transparent;
-    font-size: 30px;
-    color: #555;
-    cursor: pointer;
-    line-height: 30px;
-}
-
-.close-location:hover {
-    color: var(--text-color--);
-}
-
-/* popup logo */
-.popup-logo-box {
-    width: 85px;
-    height: 85px;
-    margin: 0 auto 18px;
-    border-radius: 15px;
-    background-color: var(--white--);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    overflow: hidden;
-}
-
-.popup-logo-box img {
-    width: 75px;
-    height: 75px;
-    object-fit: contain;
-}
-
-/* heading */
-.location-modal h2 {
-    color: var(--text-color--);
-    font-size: 22px;
-    margin-bottom: 18px;
-    font-weight: 600;
-}
-
-/* delivery/pickup */
-.order-type {
-    width: 200px;
-    height: 52px;
-    margin: 0 auto 18px;
-    background-color: #eeeeee;
-    border-radius: 15px;
-    padding: 5px;
-    display: flex;
-}
-
-
-.order-btn {
-    width: 50%;
-    border: none;
-    background: transparent;
-    border-radius: 12px;
-    color: #777;
-    font-size: 14px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-
-.order-btn.active {
-    background-color: var(--text-color--);
-    color: var(--white--);
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
-}
-
-/* location question */
-.location-question {
-    color: #666;
-    font-size: 14px;
-    margin: 5px 0 12px;
-}
-
-/* labels */
-.location-modal label {
-    display: block;
-    text-align: left;
-    color: var(--nav-bg);
-    font-size: 13px;
-    font-weight: 600;
-    margin: 10px 5px 6px;
-}
-
-/* select box */
-.popup-select {
-    width: 100%;
-    height: 48px;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    background-color: var(--white--);
-    padding: 0 14px;
-    color: #555;
-    font-size: 14px;
-    outline: none;
-    cursor: pointer;
-}
-
-
-.popup-select:focus {
-    border-color: var(--gold);
-    box-shadow: 0 0 0 2px rgba(222, 163, 71, 0.15);
-}
-
-
-
-/* select button */
-.select-location-btn {
-    width: 100%;
-    height: 50px;
-    margin-top: 22px;
-    border: none;
-    border-radius: 12px;
-    background-color: var(--text-color--);
-    color: var(--white--);
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-
-.select-location-btn:hover {
-    background-color: var(--gold);
-    color: var(--white--);
-}
-
-.location:hover,
-.call:hover,
-.visitor:hover {
-    color: var(--gold);
-}
-
-
-.call {
-    height: 42px;
-    width: 170px;
-    flex-shrink: 0;
-    background-color: var(--white--);
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 5px 10px;
-    box-sizing: border-box;
-    cursor: pointer;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
-    transition: 0.3s;
-}
-
-.call-icon {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #f2f2f2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-color--);
-    font-size: 15px;
-}
-
-.text {
-    display: flex;
-    align-items: center;
-    white-space: nowrap;
-    font-size: 15px;
-    line-height: 1.2;
-}
-
-
-/* Logo */
-
-
-/* Logo Circle */
-.navlogo {
-    position: absolute;
-    left: 50%;
-    bottom: -45px;
-    transform: translateX(-50%);
-
-    width: 110px;
-    height: 110px;
-
-    border: 4px solid var(--gold);
-    border-radius: 50%;
-    background: var(--nav-bg);
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    overflow: hidden;
-    z-index: 20;
-
-    /* Make the logo stand out */
-    box-shadow: 0 4px 15px rgba(53, 28, 23, 0.25);
-
-    /* Keep the circle smooth */
-    box-sizing: border-box;
-}
-
-
-.navlogo img {
-    width: 125%;
-    height: 125%;
-    object-fit: contain;
-    max-width:none;
-    flex-shrink:0;
-
-}
-
-
-
-/* Menu Button */
-.menu-btn {
-
-    width: 30px;
-    height: 30px;
-    min-width: 30px;
-    border-radius: 50%;
-    background-color: var(--nav-bg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--light-purple);
-}
-
-
-.menu-btn:hover {
-    background-color: var(--nav-bg);
-    color: var(--gold);
-}
-
-/* Navigation Menu */
-.nav-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    width: 200px;
-    background-color: var(--nav-bg);
-    /* padding: 10px; */
-    z-index: 10;
-    border-radius: 0 0 8px 8px;
-}
-
-.nav-menu.active {
-    display: block;
-}
-
-/* Menu Links */
-.nav-menu a {
-    display: block;
-    color: var(--white--);
-    text-decoration: none;
-    padding: 10px;
-}
-
-.nav-menu a:hover {
-    background-color: var(--gold);
-    color: var(--nav-bg);
-}
-
-/* Close Button */
-.close-btn {
-    background: none;
-    border: none;
-    color: var(--gold);
-    font-size: 25px;
-    cursor: pointer;
-    display: block;
-    margin-left: auto;
-}
-
-.close-btn:hover {
-    color: var(--white--);
-}
-
-
-.visitor {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    border: none;
-    background: transparent;
-}
-
-.vc {
-    width: 30px;
-    height: 30px;
-    min-width: 30px;
-    border-radius: 50%;
-    background-color: #f2f2f2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-color--);
-    font-size: 15px;
-}
-
-/* cart */
-
-.cart {
-    display: flex;
-    align-items: center;
-    margin: 15px;
-}
-
-.c {
-    width: 30px;
-    height: 30px;
-    min-width: 30px;
-    border-radius: 50%;
-    background-color: #f2f2f2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-color--);
-    font-size: 15px;
-}
-    .card {
+    .hero h1 span {
+      color: var(--purple);
+    }
+
+    .hero p {
+      max-width: 560px;
+      margin: 10px auto 0;
+      opacity: .75;
+    }
+
+    .sitemap-main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 24px 20px 64px;
+    }
+
+    .sitemap-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 22px;
+    }
+
+    .sitemap-card {
       background: var(--cream);
       border: 1px solid rgba(111, 63, 168, .18);
       border-top: 5px solid var(--gold);
@@ -555,29 +98,74 @@
       padding: 24px;
       box-shadow: 0 10px 30px rgba(59, 18, 60, .08);
     }
-    .card.wide { grid-column: 1 / -1; }
-    .card h2 { font-size: 1.25rem; color: var(--text-color--); margin-bottom: 4px; }
-    .card h2 a:hover { color: var(--purple); text-decoration: underline; }
-    .card .desc { font-size: .9rem; opacity: .7; margin-bottom: 14px; }
 
-    ul { list-style: none; }
-    .card li a {
+    .sitemap-card.wide {
+      grid-column: 1 / -1;
+    }
+
+    .sitemap-card h2 a {
+      font-size: 1.25rem;
+      color: var(--text-color--);
+      margin-bottom: 4px;
+      text-decoration: none;
+    }
+
+    .sitemap-card h2 a:hover {
+      color: var(--purple);
+      text-decoration: underline;
+    }
+
+    .sitemap-card .desc {
+      font-size: .9rem;
+      opacity: .7;
+      margin: 0 0 14px;
+    }
+
+    .sitemap-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .sitemap-card li a {
       display: block;
       padding: 7px 12px;
       margin: 3px 0;
       border-radius: 10px;
       color: var(--purple);
       font-weight: 500;
+      text-decoration: none;
       transition: background .2s, color .2s, transform .2s;
     }
-    .card li a::before { content: "›"; color: var(--gold); font-weight: 800; margin-right: 8px; }
-    .card li a:hover { background: var(--hover); color: var(--white--); transform: translateX(4px); }
-    .card li a:focus-visible, header a:focus-visible { outline: 3px solid var(--purple); outline-offset: 2px; }
 
-    .menu-list { columns: 2 220px; column-gap: 20px; }
-    .menu-list li { break-inside: avoid; }
+    .sitemap-card li a::before {
+      content: "›";
+      color: var(--gold);
+      font-weight: 800;
+      margin-right: 8px;
+    }
 
-    .badge {
+    .sitemap-card li a:hover {
+      background: var(--hover);
+      color: var(--white--);
+      transform: translateX(4px);
+    }
+
+    .sitemap-card li a:focus-visible {
+      outline: 3px solid var(--purple);
+      outline-offset: 2px;
+    }
+
+    .menu-list {
+      columns: 2 220px;
+      column-gap: 20px;
+    }
+
+    .menu-list li {
+      break-inside: avoid;
+    }
+
+    .sm-badge {
       display: inline-block;
       font-size: .75rem;
       font-weight: 700;
@@ -588,175 +176,112 @@
       margin-left: 8px;
       vertical-align: middle;
     }
-
-    footer {
-      background: var(--nav-bg);
-      color: var(--white--);
-      text-align: center;
-      padding: 22px 16px;
-      font-size: .9rem;
-    }
-    footer a { color: var(--gold); }
-    footer a:hover { text-decoration: underline; }
   </style>
 </head>
+
 <body>
 
-   <header>
+  <header>
     <!-- Top Bar -->
     <div class="top-bar">
       <p>Now Delivering in Karachi!</p>
-
-
     </div>
+
     <!-- Navbar -->
-    <nav class="navitem">
+    <nav class="navitem" aria-label="Main navigation">
       <div class="nav-left">
-        <!--  LOCATION  -->
-
+        <!-- LOCATION -->
         <div class="location" onclick="openLocationPopup()">
-
           <div class="location-icon">
             <i class="fa-solid fa-location-dot"></i>
           </div>
-
           <div class="location-content">
             <span class="location-title">DELIVERY</span>
             <span id="display">Select Location</span>
           </div>
-
           <div class="location-arrow">
             <i class="fa-solid fa-chevron-right"></i>
           </div>
-
         </div>
 
-
-        <!--  LOCATION POPUP -->
-
+        <!-- LOCATION POPUP -->
         <div class="location-popup" id="locationPopup">
-
           <div class="location-modal">
 
-            <!-- Close Button -->
-            <button class="close-location" onclick="closeLocationPopup()">
-              &times;
-            </button>
+            <button class="close-location" onclick="closeLocationPopup()" aria-label="Close">&times;</button>
 
-
-            <!-- Logo -->
             <div class="popup-logo-box">
-              <img src="material/Logo.png" alt="Bakerz Bite">
+              <img src="material/Logo.png" alt="Bakerz Bite logo">
             </div>
 
-
-            <!-- Heading -->
             <h2>Select Your Order Type</h2>
 
-
-            <!-- Delivery / Pick-Up -->
             <div class="order-type">
-
-              <button class="order-btn active" id="deliveryBtn">
-                Delivery
-              </button>
-
-              <button class="order-btn" id="pickupBtn">
-                Pick-Up
-              </button>
-
+              <button class="order-btn active" id="deliveryBtn">Delivery</button>
+              <button class="order-btn" id="pickupBtn">Pick-Up</button>
             </div>
 
+            <p class="location-question">Please select your location</p>
 
-            <!-- Location Text -->
-            <p class="location-question">
-              Please select your location
-            </p>
+            <label for="citySelect">City</label>
+            <input type="text" id="citySelect" value="Karachi" disabled class="popup-select">
 
-
-            <!-- City -->
-            <label for="citySelect">
-              City
-            </label>
-
-            <input type="text" value="Karachi" disabled class="popup-select">
-
-
-
-            <!-- Area -->
-            <label for="areaSelect">
-              Please select your area
-            </label>
-
+            <label for="areaSelect">Please select your area</label>
             <select id="areaSelect" class="popup-select">
-
-              <option value="">
-                Select Location
-              </option>
-
+              <option value="">Select Location</option>
             </select>
 
-
-            <!-- Select Button -->
-            <button class="select-location-btn" onclick="confirmLocation()">
-              Select
-            </button>
-
+            <button class="select-location-btn" onclick="confirmLocation()">Select</button>
           </div>
-
         </div>
 
         <!-- Call & Order -->
         <div class="call text">
-          <div class="call-icon"> <i class="fa-solid fa-phone"></i> </div>030-012-345-67
+          <div class="call-icon"> <i class="fa-solid fa-phone"></i> </div>
+          <a href="tel:+923001234567">030-012-345-67</a>
         </div>
       </div>
 
       <!-- Logo -->
-      <a href="" class="navlogo"><img src="material/Logo.png" alt="Bakerz Bite"></a>
-      <!-- Visitor Counter -->
+      <a href="index.html" class="navlogo" aria-label="Bakerz Bite home"><img src="material/Logo.png" alt="Bakerz Bite"></a>
+
       <div class="nav-right">
-        <div class="visitor "> <i class="fa-regular fa-user vc"></i><span id="counter">1204</span> </div>
+        <!-- Visitor Counter -->
+        <div class="visitor"> <i class="fa-regular fa-user vc"></i><span id="counter">1204</span> </div>
 
         <!-- Cart -->
-        <div class="cart"><i class="fa-solid fa-cart-shopping"></i>
+        <div class="cart" role="button" tabindex="0" aria-label="Open cart"><i class="fa-solid fa-cart-shopping"></i>
           <span id="cart-count">0</span>
         </div>
 
         <!-- Menu Button -->
-        <button class="menu-btn" id="menuBtn" onclick="toggleMenu()">☰</button>
+        <button class="menu-btn" id="menuBtn" onclick="toggleMenu()" aria-label="Open menu">&#9776;</button>
       </div>
 
-
       <div class="nav-menu" id="navMenu">
-
-        <!-- Close Button -->
-        <button class="close-btn" onclick="toggleMenu()">×</button>
-
-
-        <a href="#home">Home</a>
-        <a href="#merchandise">Merchandise</a>
-        <a href="#offers">Offers</a>
+        <button class="close-btn" onclick="toggleMenu()" aria-label="Close menu">&times;</button>
+        <a href="index.html#home">Home</a>
+        <a href="index.html#merchandise">Merchandise</a>
+        <a href="index.html#offers">Offers</a>
         <a href="About.html#gallery">Gallery</a>
         <a href="About.html">About Us</a>
         <a href="contact.html#faq">FAQ</a>
         <a href="contact.html">Contact Us</a>
+        <a href="sitemap.html">Site Map</a>
       </div>
     </nav>
-
   </header>
 
   <section class="hero">
-   
     <h1>Site<span>map</span></h1>
     <p>Everything on Bakerz Bite in one place. Pick a page or jump straight to a section.</p>
   </section>
 
-  <main>
-    <div class="grid">
+  <main class="sitemap-main">
+    <div class="sitemap-grid">
 
-      <section class="card">
-        <h2><a href="index.html">Home</a><span class="badge">Page</span></h2>
+      <section class="sitemap-card wide ">
+        <h2><a href="index.html">Home</a><span class="sm-badge">Page</span></h2>
         <p class="desc">Our main page with the full menu, offers and customer feedback.</p>
         <ul>
           <li><a href="index.html#home">Hero &amp; Categories</a></li>
@@ -765,8 +290,8 @@
         </ul>
       </section>
 
-      <section class="card">
-        <h2><a href="About.html">About Us</a><span class="badge">Page</span></h2>
+      <section class="sitemap-card wide ">
+        <h2><a href="About.html">About Us</a><span class="sm-badge">Page</span></h2>
         <p class="desc">Learn who we are and see our bakery in pictures.</p>
         <ul>
           <li><a href="About.html">Our Story</a></li>
@@ -774,8 +299,8 @@
         </ul>
       </section>
 
-      <section class="card">
-        <h2><a href="contact.html">Contact Us</a><span class="badge">Page</span></h2>
+      <section class="sitemap-card wide ">
+        <h2><a href="contact.html">Contact Us</a><span class="sm-badge">Page</span></h2>
         <p class="desc">Get in touch, ask a question or read common answers.</p>
         <ul>
           <li><a href="contact.html">Contact Details</a></li>
@@ -783,8 +308,8 @@
         </ul>
       </section>
 
-      <section class="card wide">
-        <h2>Our Menu<span class="badge">On Home page</span></h2>
+      <section class="sitemap-card wide">
+        <h2>Our Menu<span class="sm-badge">On Home page</span></h2>
         <p class="desc">Every category is a section of the home page.</p>
         <ul class="menu-list">
           <li><a href="index.html#cake">Fresh Cakes</a></li>
@@ -800,56 +325,46 @@
 
     </div>
   </main>
-  <!-- upside button  -->
-  <button id="backToTop" title="Go to Top">
+
+  <!-- Back to top -->
+  <button id="backToTop" title="Go to Top" aria-label="Go to top">
     <i class="fa-solid fa-arrow-up"></i>
   </button>
 
   <footer>
-
     <div class="container py-5">
-
       <div class="row">
 
-        <!-- Bakerz Bite -->
         <div class="col-md-3 footer-brand">
-          <div class="footer-logo"> <img src="material/Logo.png" alt=""></div>
+          <div class="footer-logo"><img src="material/Logo.png" alt="Bakerz Bite logo" loading="lazy"></div>
           <p>Freshly baked cakes, pastries, cookies and more.</p>
         </div>
 
-        <!-- Quick Links -->
         <div class="col-md-3">
           <h5>Quick Links</h5>
-
-          <a href="#home">Home</a><br>
-          <a href="#categoryFilter">Categories</a><br>
-          <a href="#offers">Offers</a><br>
+          <a href="index.html#home">Home</a><br>
+          <a href="index.html#cake">Categories</a><br>
+          <a href="index.html#offers">Offers</a><br>
           <a href="About.html#gallery">Gallery</a><br>
           <a href="About.html">About Us</a><br>
           <a href="contact.html">Contact Us</a>
         </div>
 
-        <!-- Contact Us -->
         <div class="col-md-3">
           <h5>Contact Us</h5>
-
-          <p><i class="fa-solid fa-phone"></i> 030-012-345-67</p>
-          <p><i class="fa-solid fa-envelope"></i> info@bakerzbite.com</p>
+          <p><i class="fa-solid fa-phone"></i> <a href="tel:+923001234567">030-012-345-67</a></p>
+          <p><i class="fa-solid fa-envelope"></i> <a href="mailto:info@bakerzbite.com">info@bakerzbite.com</a></p>
           <p><i class="fa-solid fa-location-dot"></i> Karachi, Pakistan</p>
         </div>
 
-        <!-- Follow Us -->
         <div class="col-md-3">
           <h5>Follow Us</h5>
-
-          <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-          <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram ms-3"></i></a>
-          <a href="https://wa.me/923001234567" target="_blank"><i class="fa-brands fa-whatsapp ms-3"></i></a>
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Bakerz Bite on Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Bakerz Bite on Instagram"><i class="fa-brands fa-instagram ms-3"></i></a>
+          <a href="https://wa.me/923001234567" target="_blank" rel="noopener noreferrer" aria-label="Chat with Bakerz Bite on WhatsApp"><i class="fa-brands fa-whatsapp ms-3"></i></a>
         </div>
 
       </div>
-
-
 
       <div class="ticker">
         <div class="ticker-content" id="tickerContent">
@@ -864,21 +379,17 @@
       <div class="copyright">
         <p><i class="fa-regular fa-copyright"></i>2026 Bakerz Bite. All Rights Reserved.</p>
       </div>
-
-
     </div>
   </footer>
 
-  <!-- Jquery link JS 3.7 cdn -->
+  <!-- jQuery 3.7 -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
-  <!-- Jquery Counter Ups JS 3.7 cdn -->
+  <!-- jQuery CounterUp + Waypoints -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
     integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-  <!-- Jquery way Points  cdn -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
     integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -887,33 +398,28 @@
     $('#counter').counterUp();
   </script>
 
-
-
-
-  <!-- Bs Cdn Js V 5.3 -->
+  <!-- Bootstrap JS 5.3 -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
 
-
-  <!-- SweetAlert2 CDN Link -->
+  <!-- SweetAlert2 -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-
-  <!-- AOS JS CDN LINK  -->
+  <!-- AOS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
   <script>
     AOS.init();
   </script>
 
-  <!-- lightbox 2 js cdn  -->
+  <!-- lightbox2 -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.12.0/js/lightbox.min.js"
     integrity="sha512-GPt0Vd//obpTV/wM591euN1F63tIlgHgiqlYWHUr8QdZnjJlGt5a55NN9fd8NlZ0j9aKmIn5IgBtJ/FoHUX1Ww=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-  <!-- js link  -->
+  <!-- Site script -->
   <script src="script.js"></script>
 
 </body>
+
 </html>
